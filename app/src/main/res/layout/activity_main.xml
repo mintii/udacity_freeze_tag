@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Freeze Tag"
+            android:textSize="30sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:baselineAligned="false">
+
+            <LinearLayout
+                android:layout_width="191dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="top"
+                android:orientation="vertical"
+                android:paddingLeft="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:gravity="center_horizontal"
+                    android:text="Team A"
+                    android:textColor="#616161"
+                    android:textSize="14sp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/team_a_frozen_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:text="Frozen" />
+
+
+                    <RelativeLayout
+                        android:id="@+id/team_a_frozen_button_set"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/team_a_frozen_text">
+
+                        <Button
+                            android:id="@+id/frozen_team_a_button_1"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp" />
+
+                        <Button
+                            android:id="@+id/frozen_team_a_button_2"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_toEndOf="@id/frozen_team_a_button_1"
+                            android:layout_toRightOf="@id/frozen_team_a_button_1" />
+
+                        <Button
+                            android:id="@+id/frozen_team_a_button_3"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_below="@id/frozen_team_a_button_1" />
+
+                        <Button
+                            android:id="@+id/frozen_team_a_button_4"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_below="@id/frozen_team_a_button_2"
+                            android:layout_toEndOf="@id/frozen_team_a_button_3"
+                            android:layout_toRightOf="@id/frozen_team_a_button_3" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/team_a_tagged_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@id/team_a_frozen_button_set"
+                        android:text="Tagged It" />
+
+                    <RelativeLayout
+                        android:id="@+id/team_a_tagged_button_set"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/team_a_tagged_text">
+
+                        <Button
+                            android:id="@+id/team_a_button_1"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp" />
+
+                        <Button
+                            android:id="@+id/team_a_button_2"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_toEndOf="@id/team_a_button_1"
+                            android:layout_toRightOf="@id/team_a_button_1" />
+
+                        <Button
+                            android:id="@+id/team_a_button_3"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_below="@id/team_a_button_1" />
+
+                        <Button
+                            android:id="@+id/team_a_button_4"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_below="@id/team_a_button_2"
+                            android:layout_toEndOf="@id/team_a_button_3"
+                            android:layout_toRightOf="@id/team_a_button_3" />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/team_a_tagged_button_set"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/team_a_score_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="start"
+                            android:text="Score" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30dp"
+                            android:text="00"
+                            android:textSize="40sp" />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="191dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="top"
+                android:orientation="vertical"
+                android:paddingLeft="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:gravity="center_horizontal"
+                    android:text="Team B"
+                    android:textColor="#616161"
+                    android:textSize="14sp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/team_b_frozen_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:text="Frozen" />
+
+
+                    <RelativeLayout
+                        android:id="@+id/team_b_frozen_button_set"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/team_b_frozen_text">
+
+                        <Button
+                            android:id="@+id/frozen_team_b_button_1"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp" />
+
+                        <Button
+                            android:id="@+id/frozen_team_b_button_2"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_toEndOf="@id/frozen_team_b_button_1"
+                            android:layout_toRightOf="@id/frozen_team_b_button_1" />
+
+                        <Button
+                            android:id="@+id/frozen_team_b_button_3"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_below="@id/frozen_team_b_button_1" />
+
+                        <Button
+                            android:id="@+id/frozen_team_b_button_4"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_below="@id/frozen_team_b_button_2"
+                            android:layout_toEndOf="@id/frozen_team_b_button_3"
+                            android:layout_toRightOf="@id/frozen_team_b_button_3" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/team_b_tagged_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@id/team_b_frozen_button_set"
+                        android:text="Tagged It" />
+
+                    <RelativeLayout
+                        android:id="@+id/team_b_tagged_button_set"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/team_b_tagged_text">
+
+                        <Button
+                            android:id="@+id/team_b_button_1"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp" />
+
+                        <Button
+                            android:id="@+id/team_b_button_2"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_toEndOf="@id/team_b_button_1"
+                            android:layout_toRightOf="@id/team_b_button_1" />
+
+                        <Button
+                            android:id="@+id/team_b_button_3"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_below="@id/team_b_button_1" />
+
+                        <Button
+                            android:id="@+id/team_b_button_4"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_below="@id/team_b_button_2"
+                            android:layout_toEndOf="@id/team_b_button_3"
+                            android:layout_toRightOf="@id/team_b_button_3" />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/team_b_tagged_button_set"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/team_b_score_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="start"
+                            android:text="Score" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30dp"
+                            android:text="00"
+                            android:textSize="40sp" />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:text="Start Game"
+                android:layout_marginLeft="30dp"/>
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:text="Reset Game"
+                android:layout_marginRight="30dp"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
